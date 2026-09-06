@@ -2,11 +2,11 @@
 {
     internal class Program
     {
-
-        static void applydiscount(double[] prices)
+        static void addbouncepagesbyref (ref int pages)
         {
-            prices[0] = prices[0] - 5;
+            pages = pages + 50;
         }
+       
         static void Main(string[] args)
         {
             #region question1
@@ -39,10 +39,17 @@
             #endregion
 
             #region question6
-            double[] prices = { 25.5, 40, 0 };
-            applydiscount(prices);
-            Console.WriteLine(prices[0]);
+            //double[] prices = { 25.5, 40, 0 };
+            //applydiscount(prices);
+            //Console.WriteLine(prices[0]);
             // 20.5 لان بعمل - من اول اندكس 
+            #endregion
+
+            #region question7
+            int PAGES = 400;
+            addbouncepagesbyref(ref PAGES);
+            Console.WriteLine(PAGES);
+            
             #endregion
         }
     }
