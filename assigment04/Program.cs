@@ -3,9 +3,10 @@
     internal class Program
     {
         
-     static void printbooktitle(string title)
+     
+        static void addbounspages(int pages)
         {
-            Console.WriteLine("book title = " + title );
+            pages = pages + 50;
         }
 
         static void Main(string[] args)
@@ -25,8 +26,20 @@
             #endregion
 
             #region question4
-            printbooktitle("clean code");
+            //printbooktitle("clean code");
             #endregion
+
+            #region question5
+            int pages = 400;
+            addbounspages(pages);
+            Console.WriteLine(pages);
+
+            //450 لاني في الميثود pages= +50
+            //الكود مش عايز يرن ومش عارف المشكله 
+
+
+            #endregion
+
 
         }
     }
