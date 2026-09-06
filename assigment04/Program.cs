@@ -2,11 +2,7 @@
 {
     internal class Program
     {
-        static void addbouncepagesbyref (ref int pages)
-        {
-            pages = pages + 50;
-        }
-       
+      
         static void Main(string[] args)
         {
             #region question1
@@ -46,10 +42,14 @@
             #endregion
 
             #region question7
-            int PAGES = 400;
-            addbouncepagesbyref(ref PAGES);
-            Console.WriteLine(PAGES);
-            
+            //int PAGES = 400;
+            //addbouncepagesbyref(ref PAGES);
+            //Console.WriteLine(PAGES);
+
+            #endregion
+
+            #region question8
+            //connot answer
             #endregion
         }
     }
