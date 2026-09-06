@@ -2,6 +2,11 @@
 {
     internal class Program
     {
+        static void printbookinfo(string title, int pages = 300)
+        {
+            Console.WriteLine(title);
+            Console.WriteLine(pages);
+        }
       
         static void Main(string[] args)
         {
@@ -51,8 +56,14 @@
             #region question8
             //connot answer
             #endregion
+
             #region question 9
             //cannot ansewr
+            #endregion
+
+            #region question 10
+            printbookinfo("pegramming");
+            printbookinfo("math " , 100);
             #endregion
         }
     }
