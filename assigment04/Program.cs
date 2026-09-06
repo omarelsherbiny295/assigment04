@@ -2,10 +2,12 @@
 {
     internal class Program
     {
-        static void printwelcomemessage()
+        
+     static void printbooktitle(string title)
         {
-            Console.WriteLine("welcome to the library ");
+            Console.WriteLine("book title = " + title );
         }
+
         static void Main(string[] args)
         {
             #region question1
@@ -19,9 +21,12 @@
             #endregion
 
             #region qusetion3
-            printwelcomemessage();
+            //printwelcomemessage();
             #endregion
 
+            #region question4
+            printbooktitle("clean code");
+            #endregion
 
         }
     }
