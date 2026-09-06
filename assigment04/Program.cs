@@ -5,9 +5,13 @@
         static void Main(string[] args)
         {
             #region question1
-            double[] prices = { 25.5, 40.0, 33.75 };
-            Console.WriteLine(prices[1]);
+            //double[] prices = { 25.5, 40.0, 33.75 };
+            //Console.WriteLine(prices[1]);
 
+            #endregion
+
+            #region question2
+            //can not answer
             #endregion
         }
     }
