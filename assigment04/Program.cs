@@ -2,13 +2,11 @@
 {
     internal class Program
     {
-        
-     
-        static void addbounspages(int pages)
-        {
-            pages = pages + 50;
-        }
 
+        static void applydiscount(double[] prices)
+        {
+            prices[0] = prices[0] - 5;
+        }
         static void Main(string[] args)
         {
             #region question1
@@ -30,9 +28,9 @@
             #endregion
 
             #region question5
-            int pages = 400;
-            addbounspages(pages);
-            Console.WriteLine(pages);
+            //int pages = 400;
+            //addbounspages(pages);
+            //Console.WriteLine(pages);
 
             //450 لاني في الميثود pages= +50
             //الكود مش عايز يرن ومش عارف المشكله 
@@ -40,7 +38,12 @@
 
             #endregion
 
-
+            #region question6
+            double[] prices = { 25.5, 40, 0 };
+            applydiscount(prices);
+            Console.WriteLine(prices[0]);
+            // 20.5 لان بعمل - من اول اندكس 
+            #endregion
         }
     }
 }
